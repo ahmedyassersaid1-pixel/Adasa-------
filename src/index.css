@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-tajawal: "Tajawal", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.active {
+  background-image: linear-gradient(90deg, #f54a00, #ff6900);
+  border-radius: 2rem;
+  color: white;
+}
