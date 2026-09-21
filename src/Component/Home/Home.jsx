@@ -66,7 +66,7 @@ export default function Home() {
                 <span>
                   <AiOutlineExclamationCircle />
                 </span>
-                <NavLink to="ظabout">اعرف المزيد</NavLink>
+                <NavLink to="about">اعرف المزيد</NavLink>
               </button>
             </div>
             <div className=" grid w-full grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
