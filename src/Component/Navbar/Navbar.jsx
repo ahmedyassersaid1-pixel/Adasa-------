@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link to="/"  className="flex items-center gap-3 group min-w-0">
             <div className="image size-10 sm:size-12 shrink-0">
               <img
-                src="../../../public/logo.png"
+                src={`${import.meta.env.BASE_URL}logo.png`}
                 className="w-full group-hover:scale-110 transition-all duration-300"
                 alt="logo"
               />
