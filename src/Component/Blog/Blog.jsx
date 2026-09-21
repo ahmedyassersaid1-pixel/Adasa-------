@@ -56,9 +56,9 @@ export default function Blog() {
       <main>
         <section>
           <div className="min-h-screen bg-[#0a0a0a] text-white">
-            <div className="relative py-20 overflow-hidden">
+            <div className="relative py-14 md:py-20 overflow-hidden">
               <div className="absolute inset-0 bg-[#0a0a0a]"></div>
-              <div className="absolute inset-0 bg-[linear-linear(rgba(38,38,38,0.5)_1px,transparent_1px),linear-linear(90deg,rgba(38,38,38,0.5)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
+              <div className="absolute inset-0 bg-[linear-gradient(rgba(38,38,38,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(38,38,38,0.5)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
               <div className="absolute inset-0">
                 <div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
@@ -72,31 +72,31 @@ export default function Blog() {
                   <GrNotes className="text-[#FF6900]" />
                   <p className="text-[#FF6900]">مدونتنا</p>
                 </div>
-                <h2 className="text-6xl leading-15 font-bold mb-4">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl leading-tight font-bold mb-4">
                   استكشف{" "}
                   <span className="bg-linear-to-r from-[#DD6500] to-[#F2AD00] bg-clip-text text-transparent">
                     مقالاتنا
                   </span>
                 </h2>
-                <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
+                <p className="text-base sm:text-xl text-neutral-400 max-w-2xl mx-auto">
                   اكتشف الدروس والرؤى وأفضل الممارسات للتطوير الحديث
                 </p>
               </div>
             </div>
             <section>
               <div className="search sticky top-20 z-40 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-[#262626]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                  <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4">
+                  <div className="flex flex-col md:flex-row justify-between items-stretch md:items-center gap-3 md:gap-4">
                     <div className="relative w-full md:w-80">
                       <input
                         onChange={(e) => getValue(e)}
                         placeholder="ابحث في المقالات..."
-                        className="bg-[#161616] rounded-2xl border border-gray-600/50 focus:border-[#DD6500] focus:outline-none w-full px-5 py-3 pr-12"
+                        className="bg-[#161616] rounded-2xl border border-gray-600/50 focus:border-[#DD6500] focus:outline-none w-full py-3 pr-5 pl-12"
                         type="text"
                       />
                       <IoSearch className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-500" />
                     </div>
-                    <div className="flex flex-wrap justify-center gap-2">
+                    <div className="flex flex-wrap justify-center gap-2 w-full md:w-auto">
                       <button
                         onClick={() => filterCategory("جميع المقالات")}
                         className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${currentCat == "جميع المقالات" ? "bg-linear-to-r from-orange-500 to-orange-600 text-white" : "bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/30"}`}
@@ -137,7 +137,7 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <section className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-12">
+              <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
                 <div className="mb-8 flex items-center justify-between">
                   <p className="text-neutral-400">
                     عرض{" "}
@@ -189,7 +189,7 @@ export default function Blog() {
                   </div>
                 </div>
                 <div className="pagnation">
-                  <div className="flex justify-center items-center gap-2 mt-12">
+                  <div className="flex justify-center items-center gap-1.5 sm:gap-2 mt-10 md:mt-12">
                     <button
                       className={`p-3 rounded-xl border transition-all duration-300 bg-[#0a0a0a] border-[#262626] text-neutral-600 ${currentPage === 1 ? "cursor-not-allowed" : ""}`}
                       disabled={currentPage === 1}
@@ -200,31 +200,31 @@ export default function Blog() {
                     <div className="flex items-center gap-1">
                       <button
                         onClick={() => setcurrentPage(1)}
-                        className={`min-w-11 h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 1 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
+                        className={`min-w-9 h-9 sm:min-w-11 sm:h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 1 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
                       >
                         1
                       </button>
                       <button
                         onClick={() => setcurrentPage(2)}
-                        className={`min-w-11 h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 2 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
+                        className={`min-w-9 h-9 sm:min-w-11 sm:h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 2 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
                       >
                         2
                       </button>
                       <button
                         onClick={() => setcurrentPage(3)}
-                        className={`min-w-11 h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 3 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
+                        className={`min-w-9 h-9 sm:min-w-11 sm:h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 3 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
                       >
                         3
                       </button>
                       <button
                         onClick={() => setcurrentPage(4)}
-                        className={`min-w-11 h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 4 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
+                        className={`min-w-9 h-9 sm:min-w-11 sm:h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 4 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
                       >
                         4
                       </button>
                       <button
                         onClick={() => setcurrentPage(5)}
-                        className={`min-w-11 h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 5 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
+                        className={`min-w-9 h-9 sm:min-w-11 sm:h-11 rounded-xl text-sm font-medium transition-all duration-300 bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/50 hover:text-white ${currentPage === 5 ? "bg-linear-to-r from-orange-500 to-orange-600" : null}`}
                       >
                         5
                       </button>

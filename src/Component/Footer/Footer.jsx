@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="container">
           <div className="absolute z-0 top-0 left-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
           <div className="absolute z-0 bottom-0 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10 px-8 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 relative z-10 px-4 sm:px-8 py-12 md:py-16">
             <div className="lg:col-span-1">
               <NavLink to="/">
                 <div className="flex items-center gap-3 mb-6 group ">
@@ -103,7 +103,7 @@ export default function Footer() {
                 <li>
                   <Link
                     className="text-sm text-neutral-500 hover:text-orange-500 transition-colors duration-300 flex items-center gap-2 group"
-                    to=""
+                    to="/blog"
                   >
                     <IoIosArrowForward className="w-4 h-4 opacity-0 -mr-4 group-hover:opacity-100 group-hover:mr-0 transition-all duration-300 text-orange-500 rotate-180" />
                     إضاءة
@@ -163,22 +163,22 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="px-8 py-6 border-t border-gray-600/50">
+        <div className="px-4 sm:px-8 py-6 border-t border-gray-600/50">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-center">
-              <div className="lg:col-span-1 flex items-center gap-1 justify-center lg:justify-start text-sm text-neutral-500 mb-6 leading-relaxed">
+              <div className="lg:col-span-1 flex flex-wrap items-center gap-1 justify-center lg:justify-start text-sm text-neutral-500 mb-4 lg:mb-6 leading-relaxed text-center">
                 © 2026 عدسة. صنع بكل{" "}
                 <span>
                   <FaHeart className="text-[#FF6900]" />
                 </span>{" "}
                 جميع الحقوق محفوظة.
               </div>
-              <div className="lg:col-span-1 flex items-center gap-1 justify-center lg:justify-end text-sm text-neutral-500 mb-6 leading-relaxed">
-                <ul className="flex gap-3 items-center ">
+              <div className="lg:col-span-1 flex items-center gap-1 justify-center lg:justify-end text-sm text-neutral-500 mb-2 lg:mb-6 leading-relaxed">
+                <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 items-center ">
                   <li>
                     <Link
                       className="text-sm text-neutral-500 hover:text-orange-500 transition-colors duration-300 flex items-center gap-2 group"
-                      to="privacy"
+                      to="/privacy"
                     >
                       سياسة الخصوصية{" "}
                     </Link>

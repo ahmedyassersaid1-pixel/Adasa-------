@@ -26,14 +26,14 @@ export default function Home() {
     <>
       <main>
         <section
-          className="hero px-8 py-20 text-white relative min-h-[90vh]  flex items-center justify-center overflow-hidden bg-[#0a0a0a]"
+          className="hero px-4 sm:px-8 py-16 md:py-20 text-white relative min-h-[90vh]  flex items-center justify-center overflow-hidden bg-[#0a0a0a]"
           id="hero"
         >
           <div className="absolute inset-0 bg-[linear-gradient(rgba(38,38,38,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(38,38,38,0.5)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl "></div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-orange-500/5 rounded-full blur-3xl"></div>
           <div className="absolute top-20 left-10 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl"></div>
-          <div className="content relative z-10 flex flex-col items-center">
+          <div className="content relative z-10 flex flex-col items-center w-full">
             <div className="head w-fit mb-8 flex gap-2 items-center py-2 px-4 bg-[#25160B] rounded-3xl border border-[#FF6900]">
               <span className="relative inline-flex size-1.5 animate-pulse rounded-full bg-[#FF6900]"></span>
               <span className="relative flex size-2">
@@ -44,16 +44,16 @@ export default function Home() {
               <p>مرحباً بك في عدسة</p>
             </div>
             <div className="text-center ">
-              <h1 className="text-7xl text-center leading-22.5 font-bold mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center leading-tight md:leading-snug font-bold mb-6">
                 اكتشف <span className="text-[#FAA720]">فن</span> <br />
                 التصوير الفوتوغرافي
               </h1>
-              <p className="text-2xl leading-10 text-gray-400 mb-6">
+              <p className="text-base sm:text-xl md:text-2xl leading-8 md:leading-10 text-gray-400 mb-6">
                 انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في التصوير.
               </p>
             </div>
-            <div className="buttons flex items-center gap-2 mb-16">
-              <button className="flex group transition-all duration-300 hover:-translate-y-1 items-center gap-2 px-8 py-4 bg-linear-180  from-[#EB5B0D] to-[#F76F15] rounded-4xl">
+            <div className="buttons flex flex-col sm:flex-row items-stretch sm:items-center w-full sm:w-auto gap-3 mb-10 md:mb-16">
+              <button className="flex justify-center group transition-all duration-300 hover:-translate-y-1 items-center gap-2 px-8 py-4 bg-linear-180  from-[#EB5B0D] to-[#F76F15] rounded-4xl">
                 <NavLink className="font-bold" to="blog">
                   {" "}
                   استكشف المقالات
@@ -62,7 +62,7 @@ export default function Home() {
                   <FaArrowLeftLong />
                 </span>
               </button>
-              <button className="flex group transition-all duration-300 hover:border-[#FF6900] hover:bg-[#2C190B] hover:text-[#FF6900] items-center gap-2 px-8 py-4 border border-gray-500 rounded-4xl">
+              <button className="flex justify-center group transition-all duration-300 hover:border-[#FF6900] hover:bg-[#2C190B] hover:text-[#FF6900] items-center gap-2 px-8 py-4 border border-gray-500 rounded-4xl">
                 <span>
                   <AiOutlineExclamationCircle />
                 </span>
@@ -105,10 +105,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-24 bg-[#0a0a0a] relative overflow-hidden text-white">
-          <div className="container">
+        <section className="py-16 md:py-24 bg-[#0a0a0a] relative overflow-hidden text-white">
+          <div className="container px-4 sm:px-6 lg:px-8">
             <div className="absolute z-0 top-0 right-0 w-1/3 h-full bg-linear-to-l from-orange-500/5 to-transparent"></div>
-            <header className="relative z-20 flex justify-between mb-12">
+            <header className="relative z-20 flex flex-col md:flex-row md:justify-between gap-2 md:gap-6 mb-10 md:mb-12">
               <div className="right">
                 <div className="head w-fit mb-8 flex gap-2 items-center py-2 px-4 bg-[#25160B] rounded-3xl border border-[#FF6900]">
                   <span className="relative inline-flex size-1.5 animate-pulse rounded-full bg-[#FF6900]"></span>
@@ -120,7 +120,7 @@ export default function Home() {
                   <p className="text-[#FF6900]">مميز</p>
                 </div>
                 <div>
-                  <h2 className="text-6xl font-bold leading-18.75">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                     مقالات مختارة
                   </h2>
                   <p className="text-[18px] leading-7 text-gray-400 mb-6">
@@ -128,8 +128,8 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="left self-end">
-                <button className="flex group transition-all duration-300 hover:-translate-y-1 items-center gap-2 px-8 py-4 bg-linear-180  from-[#EB5B0D] to-[#F76F15] rounded-4xl">
+              <div className="left self-start md:self-end mb-6 md:mb-0">
+                <button className="flex justify-center group transition-all duration-300 hover:-translate-y-1 items-center gap-2 px-8 py-4 bg-linear-180  from-[#EB5B0D] to-[#F76F15] rounded-4xl">
                   <NavLink className="font-bold" to="blog">
                     عرض الكل{" "}
                   </NavLink>
@@ -139,13 +139,13 @@ export default function Home() {
                 </button>
               </div>
             </header>
-            <div className="grid grid-cols-2 grid-rows-3 gap-4">
-              <div className="col-span-2 flex items-center">
+            <div className="grid grid-cols-1 gap-4">
+              <div className="col-span-1">
                 {/* log */}
-                <NavLink to={`/blog/${posts[0].slug}`}>
-                  <div className="grid grid-cols-2 grid-rows-1 w-full group border rounded-2xl transition-all duration-300 border-gray-500/50 hover:border-[#5D2F0F]">
-                    <div className="col-start-2 row-start-1 rounded-e-2xl p-10 bg-[#161616] flex flex-col">
-                      <div className="head flex items-center gap-2 mb-4">
+                <NavLink className="block" to={`/blog/${posts[0].slug}`}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 w-full group border rounded-2xl transition-all duration-300 border-gray-500/50 hover:border-[#5D2F0F]">
+                    <div className="order-2 md:order-none md:col-start-2 md:row-start-1 rounded-b-2xl md:rounded-b-none md:rounded-e-2xl p-5 sm:p-8 md:p-10 bg-[#161616] flex flex-col">
+                      <div className="head flex flex-wrap items-center gap-2 mb-4">
                         <div className="px-3 py-1 bg-[#2E1E14] text-[#FF6900] w-fit rounded-2xl border border-[#FF6900] text-[12px] leading-4 font-semibold">
                           {posts[0].category}
                         </div>
@@ -155,19 +155,19 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="content">
-                        <h3 className="text-3xl leading-9 font-bold mb-4 group-hover:text-[#ff6900] transition-all duration-300">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl leading-snug font-bold mb-4 group-hover:text-[#ff6900] transition-all duration-300">
                           {posts[0].title}
                         </h3>
                         <p className="text-[#a1a1a1] mb-6">
                           {posts[0].excerpt}
                         </p>
                       </div>
-                      <footer className="mt-auto flex items-center justify-between">
+                      <footer className="mt-auto flex flex-wrap items-center justify-between gap-3">
                         <div className="flex items-center gap-2">
                           <div className="image size-12 rounded-full relative">
                             <img
                               src={posts[0].author.avatar}
-                              className="w-full rounded-full ring-2 ring-[#262626]"
+                              className="w-full h-full object-cover rounded-full ring-2 ring-[#262626]"
                               alt=""
                             />
                             <div className="size-3.5 rounded-full bg-[#FF6900] border-2 border-[#161616] absolute -bottom-1 left-0"></div>
@@ -191,11 +191,11 @@ export default function Home() {
                         </div>
                       </footer>
                     </div>
-                    <div className="col-start-1 row-start-1  rounded-s-2xl relative h-72 md:h-100 overflow-hidden">
+                    <div className="order-1 md:order-none md:col-start-1 md:row-start-1 rounded-t-2xl md:rounded-t-none md:rounded-s-2xl relative h-56 sm:h-72 md:h-100 overflow-hidden">
                       <div className="image w-full h-full relative">
                         <img
                           src={posts[0].image}
-                          className="w-full h-full rounded-s-2xl object-cover transition-all duration-600 group-hover:scale-110"
+                          className="w-full h-full rounded-t-2xl md:rounded-t-none md:rounded-s-2xl object-cover transition-all duration-600 group-hover:scale-110"
                           alt=""
                         />
                         <div className="overlay w-full h-[50%] absolute bottom-0 left-0 right-0 bg-linear-0 from-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100"></div>
@@ -207,13 +207,13 @@ export default function Home() {
                   </div>
                 </NavLink>
               </div>
-              <div className="col-span-2 flex items-center">
+              <div className="col-span-1">
                 {/* log */}
 
-                <NavLink to={`/blog/${posts[1].slug}`}>
-                  <div className="grid grid-cols-2 grid-rows-1 w-full group border rounded-2xl transition-all duration-300 border-gray-500/50 hover:border-[#5D2F0F]">
-                    <div className="col-start-2 row-start-1 rounded-e-2xl p-10 bg-[#161616] flex flex-col">
-                      <div className="head flex items-center gap-2 mb-4">
+                <NavLink className="block" to={`/blog/${posts[1].slug}`}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 w-full group border rounded-2xl transition-all duration-300 border-gray-500/50 hover:border-[#5D2F0F]">
+                    <div className="order-2 md:order-none md:col-start-2 md:row-start-1 rounded-b-2xl md:rounded-b-none md:rounded-e-2xl p-5 sm:p-8 md:p-10 bg-[#161616] flex flex-col">
+                      <div className="head flex flex-wrap items-center gap-2 mb-4">
                         <div className="px-3 py-1 bg-[#2E1E14] text-[#FF6900] w-fit rounded-2xl border border-[#FF6900] text-[12px] leading-4 font-semibold">
                           {posts[1].category}
                         </div>
@@ -223,19 +223,19 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="content">
-                        <h3 className="text-3xl leading-9 font-bold mb-4 group-hover:text-[#ff6900] transition-all duration-300">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl leading-snug font-bold mb-4 group-hover:text-[#ff6900] transition-all duration-300">
                           {posts[1].title}
                         </h3>
                         <p className="text-[#a1a1a1] mb-6">
                           {posts[1].excerpt}
                         </p>
                       </div>
-                      <footer className="mt-auto flex items-center justify-between">
+                      <footer className="mt-auto flex flex-wrap items-center justify-between gap-3">
                         <div className="flex items-center gap-2">
                           <div className="image size-12 rounded-full relative">
                             <img
                               src={posts[1].author.avatar}
-                              className="w-full rounded-full ring-2 ring-[#262626]"
+                              className="w-full h-full object-cover rounded-full ring-2 ring-[#262626]"
                               alt=""
                             />
                             <div className="size-3.5 rounded-full bg-[#FF6900] border-2 border-[#161616] absolute -bottom-1 left-0"></div>
@@ -259,11 +259,11 @@ export default function Home() {
                         </div>
                       </footer>
                     </div>
-                    <div className="col-start-1 row-start-1  rounded-s-2xl relative h-72 md:h-100 overflow-hidden">
+                    <div className="order-1 md:order-none md:col-start-1 md:row-start-1 rounded-t-2xl md:rounded-t-none md:rounded-s-2xl relative h-56 sm:h-72 md:h-100 overflow-hidden">
                       <div className="image w-full h-full relative">
                         <img
                           src={posts[1].image}
-                          className="w-full h-full rounded-s-2xl object-cover transition-all duration-600 group-hover:scale-110"
+                          className="w-full h-full rounded-t-2xl md:rounded-t-none md:rounded-s-2xl object-cover transition-all duration-600 group-hover:scale-110"
                           alt=""
                         />
                         <div className="overlay w-full h-[50%] absolute bottom-0 left-0 right-0 bg-linear-0 from-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100"></div>
@@ -275,13 +275,13 @@ export default function Home() {
                   </div>
                 </NavLink>
               </div>
-              <div className="col-span-2 flex items-center">
+              <div className="col-span-1">
                 {/* log */}
 
-                <NavLink to={`/blog/${posts[2].slug}`}>
-                  <div className="grid grid-cols-2 grid-rows-1 w-full group border rounded-2xl transition-all duration-300 border-gray-500/50 hover:border-[#5D2F0F]">
-                    <div className="col-start-2 row-start-1 rounded-e-2xl p-10 bg-[#161616] flex flex-col">
-                      <div className="head flex items-center gap-2 mb-4">
+                <NavLink className="block" to={`/blog/${posts[2].slug}`}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 w-full group border rounded-2xl transition-all duration-300 border-gray-500/50 hover:border-[#5D2F0F]">
+                    <div className="order-2 md:order-none md:col-start-2 md:row-start-1 rounded-b-2xl md:rounded-b-none md:rounded-e-2xl p-5 sm:p-8 md:p-10 bg-[#161616] flex flex-col">
+                      <div className="head flex flex-wrap items-center gap-2 mb-4">
                         <div className="px-3 py-1 bg-[#2E1E14] text-[#FF6900] w-fit rounded-2xl border border-[#FF6900] text-[12px] leading-4 font-semibold">
                           {posts[2].category}
                         </div>
@@ -291,19 +291,19 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="content">
-                        <h3 className="text-3xl leading-9 font-bold mb-4 group-hover:text-[#ff6900] transition-all duration-300">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl leading-snug font-bold mb-4 group-hover:text-[#ff6900] transition-all duration-300">
                           {posts[2].title}
                         </h3>
                         <p className="text-[#a1a1a1] mb-6">
                           {posts[2].excerpt}
                         </p>
                       </div>
-                      <footer className="mt-auto flex items-center justify-between">
+                      <footer className="mt-auto flex flex-wrap items-center justify-between gap-3">
                         <div className="flex items-center gap-2">
                           <div className="image size-12 rounded-full relative">
                             <img
                               src={posts[2].author.avatar}
-                              className="w-full rounded-full ring-2 ring-[#262626]"
+                              className="w-full h-full object-cover rounded-full ring-2 ring-[#262626]"
                               alt=""
                             />
                             <div className="size-3.5 rounded-full bg-[#FF6900] border-2 border-[#161616] absolute -bottom-1 left-0"></div>
@@ -327,11 +327,11 @@ export default function Home() {
                         </div>
                       </footer>
                     </div>
-                    <div className="col-start-1 row-start-1  rounded-s-2xl relative h-72 md:h-100 overflow-hidden">
+                    <div className="order-1 md:order-none md:col-start-1 md:row-start-1 rounded-t-2xl md:rounded-t-none md:rounded-s-2xl relative h-56 sm:h-72 md:h-100 overflow-hidden">
                       <div className="image w-full h-full relative">
                         <img
                           src={posts[2].image}
-                          className="w-full h-full rounded-s-2xl object-cover transition-all duration-600 group-hover:scale-110"
+                          className="w-full h-full rounded-t-2xl md:rounded-t-none md:rounded-s-2xl object-cover transition-all duration-600 group-hover:scale-110"
                           alt=""
                         />
                         <div className="overlay w-full h-[50%] absolute bottom-0 left-0 right-0 bg-linear-0 from-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100"></div>
@@ -346,8 +346,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="p-24 border-y border-gray-800/50 bg-[#111111] text-white">
-          <div className="container">
+        <section className="px-4 py-16 md:p-24 border-y border-gray-800/50 bg-[#111111] text-white">
+          <div className="container px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col justify-center items-center">
               <div className="head  w-fit mb-8 flex gap-2 items-center py-2 px-4 bg-[#25160B] rounded-3xl border border-[#FF6900]">
                 <span className="relative inline-flex size-1.5 animate-pulse rounded-full bg-[#FF6900]"></span>
@@ -359,7 +359,7 @@ export default function Home() {
                 <p className="text-[#FF6900]">التصنيفات</p>
               </div>
               <div className="text-center">
-                <h2 className="text-6xl font-bold leading-18.75 ">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
                   استكشف حسب الموضوع
                 </h2>
                 <p className="text-[18px] leading-7 text-gray-400 mb-6">
@@ -373,10 +373,10 @@ export default function Home() {
                   return (
                     <div
                       key={index}
-                      className="col-span-3 group transition-all duration-500 hover:-translate-y-2"
+                      className="col-span-6 sm:col-span-3 group transition-all duration-500 hover:-translate-y-2"
                     >
                       <NavLink to="blog">
-                        <div className="relative p-6 border border-gray-800/50 rounded-2xl flex justify-between overflow-hidden transition-all duration-300">
+                        <div className="relative p-4 sm:p-6 border border-gray-800/50 rounded-2xl flex justify-between overflow-hidden transition-all duration-300">
                           <div className="absolute inset-0 bg-linear-[145deg] from-[#DD6500] to-[#F2AD00] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                           <div className="right relative z-10">
                             <div className="icon size-12 bg-[#2E1E14] flex items-center justify-center rounded-2xl border border-[#FF6900] mb-4 transition-all duration-300 group-hover:bg-[#FDA833] group-hover:border-transparent">
@@ -411,10 +411,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-24 relative overflow-hidden bg-[#0A0A0A]  z-10">
+        <section className="py-16 md:py-24 relative overflow-hidden bg-[#0A0A0A]  z-10">
           <div className="absolute bottom-0 left-0 w-1/3 h-full bg-linear-to-r from-orange-500/5 to-transparent"></div>
-          <div className="container text-white ">
-            <header className="relative z-20 flex justify-between mb-12">
+          <div className="container px-4 sm:px-6 lg:px-8 text-white ">
+            <header className="relative z-20 flex flex-col md:flex-row md:justify-between gap-2 md:gap-6 mb-10 md:mb-12">
               <div className="right">
                 <div className="head w-fit mb-8 flex gap-2 items-center py-2 px-4 bg-[#25160B] rounded-3xl border border-[#FF6900]">
                   <span className="relative inline-flex size-1.5 animate-pulse rounded-full bg-[#FF6900]"></span>
@@ -426,7 +426,7 @@ export default function Home() {
                   <p className="text-[#FF6900]">الأحدث</p>
                 </div>
                 <div>
-                  <h2 className="text-6xl font-bold leading-18.75">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                     أحدث المقالات
                   </h2>
                   <p className="text-[18px] leading-7 text-gray-400 mb-6">
@@ -434,7 +434,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="left self-end">
+              <div className="left self-start md:self-end mb-6 md:mb-0">
                 <button className="flex group transition-all duration-300 text-[#FF6900] hover:text-[#FF8904] items-center gap-2 ">
                   <NavLink className="font-bold" to="blog">
                     عرض جميع المقالات
@@ -447,12 +447,12 @@ export default function Home() {
             </header>
             <div className="grid grid-cols-6 md:grid-cols-12 gap-4 relative z-10">
               <div className="col-span-6 md:col-span-6 lg:col-span-4">
-                <NavLink to={`/blog/${posts[3].slug}`}>
+                <NavLink className="block" to={`/blog/${posts[3].slug}`}>
                   <div className="item rounded-2xl border border-gray-600/50 group transition-all duration-300 hover:-translate-y-1.5 overflow-hidden">
                     <div className="image relative overflow-hidden">
                       <img
                         src={posts[3].image}
-                        className="w-full rounded-t-2xl group-hover:scale-110 transition-all duration-300"
+                        className="w-full aspect-video object-cover rounded-t-2xl group-hover:scale-110 transition-all duration-300"
                         alt=""
                       />
                       <div className="overlay w-full h-[50%] absolute bottom-0 left-0 right-0 bg-linear-0 from-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100"></div>
@@ -477,7 +477,7 @@ export default function Home() {
                           <div className="image size-9 rounded-full relative">
                             <img
                               src={posts[3].author.avatar}
-                              className="w-full rounded-full ring-2 ring-[#262626]"
+                              className="w-full h-full object-cover rounded-full ring-2 ring-[#262626]"
                               alt=""
                             />
                           </div>
@@ -501,12 +501,12 @@ export default function Home() {
                 </NavLink>
               </div>
               <div className="col-span-6 md:col-span-6 lg:col-span-4">
-                <NavLink to={`/blog/${posts[4].slug}`}>
+                <NavLink className="block" to={`/blog/${posts[4].slug}`}>
                   <div className="item rounded-2xl border border-gray-600/50 group transition-all duration-300 hover:-translate-y-1.5 overflow-hidden">
                     <div className="image relative overflow-hidden">
                       <img
                         src={posts[4].image}
-                        className="w-full rounded-t-2xl group-hover:scale-110 transition-all duration-300"
+                        className="w-full aspect-video object-cover rounded-t-2xl group-hover:scale-110 transition-all duration-300"
                         alt=""
                       />
                       <div className="overlay w-full h-[50%] absolute bottom-0 left-0 right-0 bg-linear-0 from-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100"></div>
@@ -531,7 +531,7 @@ export default function Home() {
                           <div className="image size-9 rounded-full relative">
                             <img
                               src={posts[4].author.avatar}
-                              className="w-full rounded-full ring-2 ring-[#262626]"
+                              className="w-full h-full object-cover rounded-full ring-2 ring-[#262626]"
                               alt=""
                             />
                           </div>
@@ -555,12 +555,12 @@ export default function Home() {
                 </NavLink>
               </div>
               <div className="col-span-6 md:col-span-6 lg:col-span-4">
-                <NavLink to={`/blog/${posts[5].slug}`}>
+                <NavLink className="block" to={`/blog/${posts[5].slug}`}>
                   <div className="item rounded-2xl border border-gray-600/50 group transition-all duration-300 hover:-translate-y-1.5 overflow-hidden">
                     <div className="image relative overflow-hidden">
                       <img
                         src={posts[5].image}
-                        className="w-full rounded-t-2xl group-hover:scale-110 transition-all duration-300"
+                        className="w-full aspect-video object-cover rounded-t-2xl group-hover:scale-110 transition-all duration-300"
                         alt=""
                       />
                       <div className="overlay w-full h-[50%] absolute bottom-0 left-0 right-0 bg-linear-0 from-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100"></div>
@@ -585,7 +585,7 @@ export default function Home() {
                           <div className="image size-9 rounded-full relative">
                             <img
                               src={posts[5].author.avatar}
-                              className="w-full rounded-full ring-2 ring-[#262626]"
+                              className="w-full h-full object-cover rounded-full ring-2 ring-[#262626]"
                               alt=""
                             />
                           </div>
@@ -612,14 +612,14 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="form relative bg-[#0A0A0A] text-white py-24">
+          <div className="form relative bg-[#0A0A0A] text-white py-16 md:py-24">
             <div className="absolute z-0  top-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-orange-500/10 rounded-full blur-3xl"></div>
             <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="bg-[#161616] rounded-3xl border border-[#262626] p-8 md:p-12 lg:p-16 flex items-center flex-col">
+              <div className="bg-[#161616] rounded-3xl border border-[#262626] p-6 sm:p-8 md:p-12 lg:p-16 flex items-center flex-col text-center">
                 <div className="icon mb-6 size-16 flex justify-center items-center bg-linear-300 from-[#F64D00] to-[#FF6600] rounded-2xl">
                   <FaRegEnvelope className="size-8" />
                 </div>
-                <h2 className="text-4xl leading-10 font-bold mb-4">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl leading-snug font-bold mb-4">
                   اشترك في{" "}
                   <span className="bg-linear-to-r from-[#DD6500] to-[#F2AD00] bg-clip-text text-transparent">
                     نشرتنا الإخبارية
@@ -629,7 +629,7 @@ export default function Home() {
                   احصل على نصائح التصوير الحصرية ودروس جديدة مباشرة في بريدك
                   الإلكتروني
                 </p>
-                <form className="flex flex-col sm:flex-row gap-3  mx-auto mb-6">
+                <form className="flex flex-col sm:flex-row gap-3 w-full max-w-xl mx-auto mb-6">
                   <input
                     placeholder="أدخل بريدك الإلكتروني"
                     className="w-full flex-1 px-5 py-4 rounded-xl bg-[#0a0a0a] border border-[#262626] focus:outline-none focus:border-orange-500/50 text-white placeholder-neutral-500 transition-colors"

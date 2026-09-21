@@ -20,15 +20,15 @@ export default function Card({ posts, display }) {
               to={`/blog/${post.slug}`}
               className={
                 display === "grid"
-                  ? "h-full"
-                  : "flex flex-col md:flex-row h-full"
+                  ? "block h-full"
+                  : "flex flex-col md:flex-row h-full w-full"
               }
             >
               <div
                 className={
                   display === "grid"
                     ? "image relative overflow-hidden"
-                    : "image relative overflow-hidden w-72 lg:w-80 shrink-0"
+                    : "image relative overflow-hidden w-full h-52 sm:h-60 md:h-auto md:w-72 lg:w-80 shrink-0"
                 }
               >
                 <img
@@ -36,7 +36,7 @@ export default function Card({ posts, display }) {
                   alt={post.title}
                   className={
                     display === "grid"
-                      ? "w-full rounded-t-2xl group-hover:scale-110 transition-all duration-300"
+                      ? "w-full aspect-video object-cover rounded-t-2xl group-hover:scale-110 transition-all duration-300"
                       : " w-full h-full object-cover group-hover:scale-105 transition-all duration-300"
                   }
                 />
@@ -51,8 +51,8 @@ export default function Card({ posts, display }) {
               <div
                 className={
                   display === "grid"
-                    ? "h-full rounded-b-2xl p-6 bg-[#161616]"
-                    : "flex-1 p-6 bg-[#161616] flex flex-col justify-center"
+                    ? "rounded-b-2xl p-5 sm:p-6 bg-[#161616]"
+                    : "flex-1 min-w-0 p-5 sm:p-6 bg-[#161616] flex flex-col justify-center"
                 }
               >
                 <div className="flex items-center gap-2 text-[14px] leading-5 text-[#737373] mb-3">

@@ -19,7 +19,7 @@ export default function About() {
   const [posts, setPosts] = useState(data.posts);
   return (
     <>
-      <section className="relative py-24 overflow-hidden text-white">
+      <section className="relative py-16 md:py-24 overflow-hidden text-white">
         <div className="absolute inset-0 bg-[#0a0a0a]"></div>
         <div className="absolute inset-0 bg-[linear-gradient(rgba(38,38,38,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(38,38,38,0.5)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
         <div className="absolute inset-0 opacity-30">
@@ -38,65 +38,65 @@ export default function About() {
               من نحن
             </p>
           </div>
-          <h2 className="text-6xl leading-15 font-bold mb-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl leading-tight font-bold mb-4">
             مهمتنا هي{" "}
             <span className="bg-linear-to-r from-[#DD6500] to-[#F2AD00] bg-clip-text text-transparent">
               الإعلام والإلهام
             </span>
           </h2>
-          <p className="text-xl text-neutral-400 max-w-2xl mx-auto mb-12">
+          <p className="text-base sm:text-xl text-neutral-400 max-w-2xl mx-auto mb-10 md:mb-12">
             مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين
             ونصائح عملية لتطوير مهاراتكم. نحن شغوفون بمشاركة المعرفة ومساعدة
             المصورين على تنمية مهاراتهم من خلال محتوى عالي الجودة.
           </p>
           <div className=" grid w-full grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-            <div className="flex flex-col items-center  p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="icon mb-1">
                 <FaUsers className="size-8 text-[#FF6900]" />
               </div>
-              <p className="text-[#FA991D] text-3xl leading-9 font-bold">
+              <p className="text-[#FA991D] text-2xl sm:text-3xl leading-9 font-bold">
                 +2مليون
               </p>
               <p className="text-[#4B4B4B]">قارئ شهرياً</p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="icon mb-1">
                 <MdLibraryBooks className="size-8 text-[#FF6900]" />
               </div>
-              <p className="text-[#FA991D] text-3xl leading-9 font-bold">
+              <p className="text-[#FA991D] text-2xl sm:text-3xl leading-9 font-bold">
                 +500
               </p>
               <p className="text-[#4B4B4B]">مقالة منشورة</p>
             </div>{" "}
-            <div className="flex flex-col items-center p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="icon mb-1">
                 <FaPenNib className="size-8 text-[#FF6900]" />
               </div>
-              <p className="text-[#FA991D] text-3xl leading-9 font-bold">+50</p>
+              <p className="text-[#FA991D] text-2xl sm:text-3xl leading-9 font-bold">+50</p>
               <p className="text-[#4B4B4B]">كاتب خبير</p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-[#141414] rounded-2xl border border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="icon mb-1">
                 <MdMenuBook className="size-8 text-[#FF6900]" />
               </div>
-              <p className="text-[#FA991D] text-3xl leading-9 font-bold">+15</p>
+              <p className="text-[#FA991D] text-2xl sm:text-3xl leading-9 font-bold">+15</p>
               <p className="text-[#4B4B4B]">تصنيف</p>
             </div>
           </div>
         </div>
       </section>
-      <section className="py-20 bg-[#111111] border-y border-[#262626]">
-        <div className="container">
+      <section className="py-16 md:py-20 bg-[#111111] border-y border-[#262626]">
+        <div className="container px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
             <span className="w-1.5 h-8 bg-linear-to-b from-orange-500 to-yellow-500 rounded-full"></span>
             قيمنا
             <span className="w-1.5 h-8 bg-linear-to-t from-orange-500 to-yellow-500 rounded-full"></span>
           </h2>
 
-          <p className="text-lg text-neutral-400 text-center mb-16">
+          <p className="text-base md:text-lg text-neutral-400 text-center mb-10 md:mb-16">
             المبادئ التي توجه كل ما نقوم بإنشائه
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="group p-6 bg-[#161616] rounded-2xl border border-[#262626] hover:border-orange-500/30 transition-all duration-300 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-linear-to-br from-orange-500 to-yellow-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               <div className="relative">
@@ -152,8 +152,8 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-[#0a0a0a] text-white">
-        <div className="container">
+      <section className="py-16 md:py-20 bg-[#0a0a0a] text-white">
+        <div className="container px-4 sm:px-6 lg:px-8">
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="head mx-auto w-fit mb-8 flex gap-2 items-center  py-2 px-4 bg-[#25160B] rounded-3xl border border-[#FF6900] ">
               <span className="relative flex size-2">
@@ -165,12 +165,12 @@ export default function About() {
             <h3 className="text-4xl leading-10 font-bold mb-4">
               تعرف على كتابنا
             </h3>
-            <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-neutral-400 max-w-2xl mx-auto">
               فريقنا من المصورين والكتاب ذوي الخبرة شغوفون بمشاركة معرفتهم مع
               المجتمع.
             </p>
           </div>
-          <div className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+          <div className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 md:mt-16">
             {posts.map((post) => (
               <div key={post.id} className="group bg-[#161616] rounded-2xl p-6 text-center border border-[#262626] hover:border-orange-500/30 transition-all duration-300">
                 <div className="flex flex-col items-center">
@@ -219,7 +219,7 @@ export default function About() {
         </div>
       </section>
       <section>
-        <section className="py-20 bg-linear-to-br from-orange-600 via-orange-500 to-yellow-500 relative overflow-hidden">
+        <section className="py-16 md:py-20 bg-linear-to-br from-orange-600 via-orange-500 to-yellow-500 relative overflow-hidden">
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-10 right-10 w-64 h-64 bg-white/20 rounded-full blur-[100px]"></div>
             <div className="absolute bottom-10 left-10 w-48 h-48 bg-white/20 rounded-full blur-[80px]"></div>

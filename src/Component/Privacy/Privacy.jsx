@@ -12,9 +12,9 @@ export default function Privacy() {
   return (
     <>
       <div className="bg-[#0a0a0a]">
-        <header className="relative py-20 overflow-hidden">
+        <header className="relative py-14 md:py-20 overflow-hidden">
           <div className="absolute inset-0 bg-[#0a0a0a]" />
-          <div className="absolute inset-0 bg-[linear-linear(rgba(38,38,38,0.5)_1px,transparent_1px),linear-linear(90deg,rgba(38,38,38,0.5)_1px,transparent_1px)] bg-[size:60px_60px]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(38,38,38,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(38,38,38,0.5)_1px,transparent_1px)] bg-[size:60px_60px]" />
           <div className="absolute inset-0 opacity-30">
             <div className="absolute bottom-20 left-20 w-72 h-72 bg-yellow-500/20 rounded-full blur-[100px]" />
           </div>
@@ -41,8 +41,8 @@ export default function Privacy() {
             <p className="text-neutral-400 text-lg">آخر تحديث: 15 يناير 2026</p>
           </div>
         </header>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="bg-orange-500/10 border border-orange-500/20 rounded-2xl p-6 mb-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+          <div className="bg-orange-500/10 border border-orange-500/20 rounded-2xl p-4 sm:p-6 mb-10 md:mb-12">
             <div className="flex gap-4">
               <div className="shrink-0">
                 <MdOutlinePrivacyTip className="size-6 text-orange-500" />
@@ -60,13 +60,13 @@ export default function Privacy() {
           </div>
           <div className="space-y-12">
             <section className="group">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center justify-center size-8 shrink-0 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
                   1
                 </span>
                 مقدمة{" "}
               </h2>
-              <div className="pr-11">
+              <div className="pr-0 sm:pr-11">
                 <p className="text-neutral-400 leading-relaxed mb-4">
                   مرحباً بك في عدسة. نحن نحترم خصوصيتك وملتزمون بحماية بياناتك
                   الشخصية. ستعلمك سياسة الخصوصية هذه بكيفية العناية ببياناتك
@@ -75,16 +75,16 @@ export default function Privacy() {
               </div>
             </section>
             <section className="group">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center justify-center size-8 shrink-0 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
                   2
                 </span>
                 المعلومات التي نجمعها
               </h2>
-              <div className="pr-11">
+              <div className="pr-0 sm:pr-11">
                 <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>
                       <strong className="text-white">بيانات الهوية:</strong>{" "}
@@ -92,16 +92,16 @@ export default function Privacy() {
                       مشابه.
                     </span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>
                       <strong className="text-white">بيانات الاتصال:</strong>{" "}
                       تشمل عنوان البريد الإلكتروني.
                     </span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>
                       <strong className="text-white">البيانات التقنية:</strong>{" "}
@@ -109,8 +109,8 @@ export default function Privacy() {
                       التشغيل.
                     </span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>
                       <strong className="text-white">بيانات الاستخدام:</strong>{" "}
@@ -121,41 +121,41 @@ export default function Privacy() {
               </div>
             </section>
             <section className="group">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center justify-center size-8 shrink-0 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
                   3
                 </span>
                 كيف نستخدم معلوماتك
               </h2>
-              <div className="pr-11">
+              <div className="pr-0 sm:pr-11">
                 <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>لتقديم خدمتنا والحفاظ عليها</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>لإخطارك بالتغييرات في خدمتنا</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>لتقديم دعم العملاء</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>لجمع تحليلات أو معلومات قيمة لتحسين خدمتنا</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>لمراقبة استخدام خدمتنا</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>لاكتشاف ومنع ومعالجة المشاكل التقنية</span>
                   </li>
@@ -163,13 +163,13 @@ export default function Privacy() {
               </div>
             </section>
             <section className="group">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center justify-center size-8 shrink-0 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
                   4
                 </span>
                 ملفات تعريف الارتباط
               </h2>
-              <div className="pr-11">
+              <div className="pr-0 sm:pr-11">
                 <p className="text-neutral-400 leading-relaxed mb-4">
                   نستخدم ملفات تعريف الارتباط وتقنيات التتبع المشابهة لتتبع
                   النشاط على موقعنا. يمكنك توجيه متصفحك لرفض جميع ملفات تعريف
@@ -180,13 +180,13 @@ export default function Privacy() {
               </div>
             </section>
             <section className="group">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center justify-center size-8 shrink-0 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
                   5
                 </span>
                 أمان البيانات
               </h2>
-              <div className="pr-11">
+              <div className="pr-0 sm:pr-11">
                 <p className="text-neutral-400 leading-relaxed mb-4">
                   لقد وضعنا تدابير أمنية مناسبة لمنع فقدان بياناتك الشخصية أو
                   استخدامها أو الوصول إليها بشكل غير مصرح به عن طريق الخطأ. نحن
@@ -196,41 +196,41 @@ export default function Privacy() {
               </div>
             </section>
             <section className="group">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center justify-center size-8 shrink-0 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
                   6
                 </span>
                 حقوقك
               </h2>
-              <div className="pr-11">
+              <div className="pr-0 sm:pr-11">
                 <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>طلب الوصول إلى بياناتك الشخصية</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>طلب تصحيح بياناتك الشخصية</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>طلب مسح بياناتك الشخصية</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>الاعتراض على معالجة بياناتك الشخصية</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>طلب تقييد معالجة بياناتك الشخصية</span>
                   </li>
-                  <li className="flex items-center gap-3 text-neutral-400">
-                    <VscVerifiedFilled className="text-orange-500 size-5" />
+                  <li className="flex items-start gap-3 text-neutral-400">
+                    <VscVerifiedFilled className="text-orange-500 size-5 shrink-0 mt-0.5" />
 
                     <span>الحق في سحب الموافقة</span>
                   </li>
@@ -238,13 +238,13 @@ export default function Privacy() {
               </div>
             </section>
             <section className="group">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center justify-center size-8 shrink-0 bg-linear-to-br from-orange-500 to-yellow-500 text-white text-sm font-bold rounded-lg">
                   7
                 </span>
                 تواصل معنا
               </h2>
-              <div className="pr-11">
+              <div className="pr-0 sm:pr-11">
                 <p className="text-neutral-400 leading-relaxed mb-4">
                   إذا كان لديك أي أسئلة حول شروط الخدمة هذه، يرجى التواصل معنا:
                 </p>

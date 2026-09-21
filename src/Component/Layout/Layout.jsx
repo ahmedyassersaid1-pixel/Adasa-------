@@ -7,7 +7,7 @@ export default function Layout() {
   return (
     <>
     <Navbar/>
-    <div className=" pt-20 selection:bg-[#FF6900] selection:text-white">
+    <div className="pt-20 overflow-x-hidden selection:bg-[#FF6900] selection:text-white">
 
     <Outlet/>
     <Footer/>

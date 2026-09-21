@@ -15,10 +15,10 @@ export default function Notfound() {
         </div>
         <div className="relative text-center px-4 max-w-lg mx-auto">
           <div className="relative mb-6">
-            <h1 className="text-[140px] md:text-[180px] font-black text-transparent bg-clip-text bg-linear-to-r from-orange-500 via-yellow-500 to-orange-500 leading-none select-none">
+            <h1 className="text-[110px] sm:text-[140px] md:text-[180px] font-black text-transparent bg-clip-text bg-linear-to-r from-orange-500 via-yellow-500 to-orange-500 leading-none select-none">
               404
             </h1>
-            <div className="absolute inset-0 text-[140px] md:text-[180px] font-black text-orange-500/20 blur-2xl leading-none select-none pointer-events-none">
+            <div className="absolute inset-0 text-[110px] sm:text-[140px] md:text-[180px] font-black text-orange-500/20 blur-2xl leading-none select-none pointer-events-none">
               404
             </div>
           </div>
@@ -34,11 +34,11 @@ export default function Notfound() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             عفواً! الصفحة غير موجودة
           </h2>
-          <p className="text-neutral-400 mb-8 text-lg">
+          <p className="text-neutral-400 mb-8 text-base sm:text-lg">
             الصفحة التي تبحث عنها غير موجودة أو تم نقلها. دعنا نعيدك إلى المسار
             الصحيح.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-10 sm:mb-12">
             <Link
               className="font-bold px-8 py-4 rounded-4xl text-white bg-linear-to-tl from-[#EB5A0D] to-[#F87115] inline-flex items-center justify-center gap-2"
               to="/"
