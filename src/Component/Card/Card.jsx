@@ -18,7 +18,11 @@ export default function Card({ posts, display }) {
           <div className="item h-full  rounded-2xl border border-gray-600/50 group transition-all duration-300 hover:-translate-y-1.5 overflow-hidden">
             <NavLink
               to={`/blog/${post.slug}`}
-              className="h-full"
+              className={
+                display === "grid"
+                  ? "h-full"
+                  : "flex flex-col md:flex-row h-full"
+              }
             >
               <div
                 className={
