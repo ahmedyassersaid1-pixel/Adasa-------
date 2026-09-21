@@ -8,7 +8,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
 import data from "../../data/posts.json";
-import Card from "./../card/Card";
+import Card from "./../Card/Card";
 export default function Blog() {
   const [posts, setPosts] = useState(data.posts);
   // console.log(posts.length);
